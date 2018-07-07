@@ -1,0 +1,33 @@
+{
+  "name": "sinnott-orm-typed",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/orm.js",
+  "types": "./dist/orm.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "pretest": "yarn build",
+    "test": "echo \"Running ORM tests\" && jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash.isplainobject": "^4.0.6",
+    "on-finished": "^2.3.0",
+    "pg": "^7.4.1",
+    "reflect-metadata": "^0.1.12",
+    "sql": "^0.78.0",
+    "toposort": "^1.0.6",
+    "uuid": "^3.2.1",
+    "@types/pg": "^7.4.5",
+    "@types/uuid": "^3.4.3",
+    "@types/on-finished": "2.3.1",
+    "@types/lodash.isplainobject": "^4.0.3"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "ts-jest": "^22.4.2",
+    "@types/jest": "^22.2.2"
+  }
+}
