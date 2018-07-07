@@ -135,7 +135,10 @@ export class MetadataManager {
     models.forEach(model => {
       const entityMetadata = this.getEntityMetadata(model);
       const metadata = Object.assign({}, entityMetadata);
-      const sqlTable = define(metadata);
+      const sqlTable = define(metadata as TableDefinition<
+        string,
+        { [x: string]: any }
+      >);
       this.table[model.name.toLowerCase()] = sqlTable;
     });
   }
