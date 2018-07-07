@@ -17,6 +17,7 @@
     // "noImplicitThis": true,
     "noUnusedLocals": true,
     // "noUnusedParameters": true,
+    "skipLibCheck": true,
     "suppressExcessPropertyErrors": false,
     "suppressImplicitAnyIndexErrors": false,
     "strictFunctionTypes": true,
