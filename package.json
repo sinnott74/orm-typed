@@ -2,8 +2,8 @@
   "name": "sinnott-orm-typed",
   "version": "0.0.1",
   "description": "",
-  "main": "./dist/orm.js",
-  "types": "./dist/orm.d.ts",
+  "main": "src/orm",
+  "types": "src/orm",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
