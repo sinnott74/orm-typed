@@ -8,7 +8,7 @@ beforeAll(async () => {
 });
 
 describe("TableInfo", () => {
-  it("can", async () => {
+  xit("can", async () => {
     await transaction(async () => {
       await compareEntityMetadataWithTable(BlogPost);
     });
