@@ -7,9 +7,9 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "pretest": "yarn build",
+    "pretest": "npm build",
     "test": "echo \"Running ORM tests\" && jest",
-    "postinstall": "tsc"
+    "postinstall": "npm build"
   },
   "author": "",
   "license": "ISC",
