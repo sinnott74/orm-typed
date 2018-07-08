@@ -2,13 +2,14 @@
   "name": "sinnott-orm-typed",
   "version": "0.0.1",
   "description": "",
-  "main": "src/orm",
-  "types": "src/orm",
+  "main": "dist/orm",
+  "types": "dist/orm",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
     "pretest": "yarn build",
-    "test": "echo \"Running ORM tests\" && jest"
+    "test": "echo \"Running ORM tests\" && jest",
+    "postinstall": "tsc"
   },
   "author": "",
   "license": "ISC",
