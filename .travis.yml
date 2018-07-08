@@ -2,9 +2,19 @@ language: node_js
 node_js:
   - '9'
 
+sudo: required
+
 # Cache npm inbetween builds to improve build time
 # Documentaion - https://docs.travis-ci.com/user/caching/
 cache:
   yarn: true
   directories:
   - node_modules # NPM packages
+
+# registering to user postgresql database
+services:
+ - postgresql
+
+#creates the database
+before_install:
+ - psql -c 'create database pwadb;' -U postgres --set AUTOCOMMIT=off
