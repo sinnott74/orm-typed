@@ -19,8 +19,11 @@ export class Query {
    */
   async executeSQLQuery(sqlQuery: QueryConfig): Promise<QueryResult> {
     const transaction = Transaction.get();
-    // console.log(sqlQuery.text, sqlQuery.values);
-    return transaction.client.query(sqlQuery);
+    console.time("query");
+    console.log("query", sqlQuery.text, sqlQuery.values);
+    const result = transaction.client.query(sqlQuery);
+    console.timeEnd("query");
+    return result;
   }
 
   /**
