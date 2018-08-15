@@ -21,7 +21,7 @@ export class Query {
     const transaction = Transaction.get();
     console.time("query");
     console.log("query", sqlQuery.text, sqlQuery.values);
-    const result = transaction.client.query(sqlQuery);
+    const result = await transaction.client.query(sqlQuery);
     console.timeEnd("query");
     return result;
   }
